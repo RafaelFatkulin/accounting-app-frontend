@@ -1,0 +1,56 @@
+.button {
+	background-color: var(--white);
+	background-image: none;
+	border: 1px solid var(--black);
+	border-radius: 4px;
+	box-shadow: var(--white) 4px 4px 0 0, var(--black) 4px 4px 0 1px;
+	box-sizing: border-box;
+	color: var(--black);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	overflow: visible;
+	padding: 12px 40px;
+	text-align: center;
+	text-transform: none;
+	touch-action: manipulation;
+	user-select: none;
+	-webkit-user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	transition: var(--transition);
+
+	&-form {
+		padding: 12px;
+		width: 100%;
+		margin-bottom: 16px;
+	}
+
+	&:hover {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	&:active {
+		box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+		outline: 0;
+	}
+
+	&:not([disabled]):active {
+		box-shadow: var(--white) 2px 2px 0 0, var(--black) 2px 2px 0 1px;
+		transform: translate(2px, 2px);
+	}
+
+	@media screen and (max-width: 834px) {
+		font-size: 14px;
+		padding: 8px 16px;
+		line-height: 24px;
+	}
+
+	@media screen and (max-width: 430px) {
+		padding: 7px 12px;
+		line-height: 22px;
+	}
+}

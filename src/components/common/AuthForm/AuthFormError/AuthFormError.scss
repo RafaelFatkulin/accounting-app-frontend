@@ -1,0 +1,14 @@
+.auth-form__error {
+	font-size: 16px;
+	margin-bottom: 16px;
+	color: var(--red);
+
+	@media screen and (max-width: 834px) {
+		font-size: 14px;
+		margin-bottom: 12px;
+	}
+	@media screen and (max-width: 430px) {
+		font-size: 12px;
+		margin-bottom: 8px;
+	}
+}

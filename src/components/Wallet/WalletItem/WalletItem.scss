@@ -1,0 +1,43 @@
+.wallet-item {
+	padding: 16px;
+	transition: var(--transition);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto-fit, 1fr);
+	grid-gap: 12px;
+	border: 1px solid #000;
+	border-radius: 4px;
+	box-shadow: #FFF 4px 4px 0 0, #000 4px 4px 0 1px;
+
+	&:hover {
+		background-color: #000;
+	}
+	
+	&:hover &__name a, &:hover &__balance{
+			color: white;
+	}
+
+	&:hover &__actions button:hover {
+		border-color: var(--white);
+	}
+
+	&__name {
+		a {
+			font-size: 24px;
+			color: var(--black);
+			font-weight: 600;
+		}
+	}
+
+	&__actions {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 16px;
+	}
+
+	@media screen and (max-width: 430px) {
+		&__actions {
+			grid-template-columns: 1fr;
+		}
+	}
+}

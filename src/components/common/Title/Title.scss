@@ -1,0 +1,16 @@
+.title {
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 36px;
+
+	@media screen and (max-width: 834px) {
+		font-size: 28px;
+		margin-bottom: 28px;
+	}
+
+	@media screen and (max-width: 430px) {
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
+}
+

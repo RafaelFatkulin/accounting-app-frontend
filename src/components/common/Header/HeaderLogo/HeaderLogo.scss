@@ -1,0 +1,37 @@
+.header__logo {
+	display: block;
+	font-size: 16px;
+	height: 48px;
+	width: 48px;
+	font-weight: 600;
+	line-height: 16px;
+	color: var(--black);
+	background: var(--white);
+	border: 1px solid var(--black);
+	padding: 4px;
+	border-radius: 4px;
+	transition: var(--transition);
+	box-shadow: var(--white) 4px 4px 0 0, var(--black) 4px 4px 0 1px;
+	
+	&:hover {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
+	&:active {
+		box-shadow: var(--white) 2px 2px 0 0, var(--black) 2px 2px 0 1px;
+		transform: translate(2px, 2px);
+	}
+
+	@media screen and (max-width: 834px) {
+		font-size: 14px;
+		height: 42px;
+		width: 42px;
+	}
+
+	@media screen and (max-width: 430px) {
+		font-size: 12px;
+		height: 36px;
+		width: 36px;
+	}
+}
